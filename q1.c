@@ -1,0 +1,14 @@
+#include <stdio.h>
+int countSetBits(int n)
+{
+    if (n == 0)
+        return 0;
+    else
+        return (n & 1) + countSetBits(n >> 1);
+}
+int main()
+{
+    int n = 9;
+    printf("%d", countSetBits(n));
+    return 0;
+}

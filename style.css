@@ -1,0 +1,83 @@
+/* 
+        h2{
+            color: rgb(13, 198, 112);
+        }
+        .error {
+            color: red;
+        }
+        .class{
+            color: blueviolet;
+        }
+        .abc{
+            color: blueviolet;
+        }
+        button{
+    background:green;
+    color: black;
+    border: 4px ;
+    border-color: red;
+        }
+        *body{
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    }
+    h3{
+        color: red;
+    }
+    h1{
+        background-color: bisque;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(13, 198, 112);
+        text-align: center;
+    } */
+     /* h1{
+        color:red;
+        text-align: center;
+     }
+     h2{
+        color:blue;
+        text-align: center;
+     }
+     *body{
+        margin: 0;
+        padding: 0%;
+        text-align: center;
+     }
+     .cls{
+        color: green;
+        background-image: url(xyz.jpg);
+     }
+     h1,h2,h3{
+        font-family: cursive;
+     }
+     #sel{
+        color: burlywood;
+        background-color: black;
+     } */
+     body {
+        background-color: black;
+
+      }
+      .start{
+        height: 400px;
+        width: 500px;
+        background-color: red;
+        position: relative;
+      }
+      .box{
+        background-color: blue;
+        height: 150px;
+        width: 500px;
+        position: absolute;
+        top: 150px;
+      }
+      .circle{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left : 200px;
+        top: 25px;
+      }

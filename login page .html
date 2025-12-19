@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta><link href="/Users/kumaranup10/Documents/college/web/style.css" rel="style" />
+    <style>
+
+        h2{
+            color: rgb(13, 56, 198);
+        }
+        .error {
+            color: red;
+        }
+        .class{
+            color: blueviolet;
+        }
+        .abc{
+            color: blueviolet;
+        }
+        button{
+    background:green;
+    color: white;
+    border: 4px white;
+    border-radius: 10px;
+        }
+        .container {
+            padding: 30px;
+            background-color: rgba(30, 221, 58, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 400px 400px rgba(173, 35, 120, 0.3);
+            max-width: 600px;
+            width: 90%;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(255, 255, 255);
+            color: #d71616;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            overflow: hidden;
+            border: 2px black;
+            border-radius: 2px;
+        }
+    </style>
+    <title>Registration Form Validation</title>
+</head>
+<body>
+ <center>
+    <!-- <h3>Kumar Anup</h3>
+    <h3>Roll no.:-170</h3> -->
+    <div class="container">
+<b><h2>Login Page</h2></b>
+<form id="registrationForm">
+    <div class="class">
+        <label for="name"><b>User ID:</b></label>
+    <input type="text" id="name" name="Enter your Name" required>
+    </div>
+    <span class="error" id="nameError"></span><br><br>
+    <div class="abc">
+        <label for="password"><b>Password:</b></label>
+    <input type="password" id="password" name="Enter your Password" required>
+</div>
+    <span class="error" id="passwordError"></span><br><br>
+    <button type="submit"><a href=""><b>Login</b></a></button><br><button type="Submit"><a href=""><b>Create your account</b></a></button>
+    <br><br>
+    <a href="xyz">click here to reset password</a>
+</form>
+</div>
+ </center>
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    // Prevent form submission
+    event.preventDefault();
+    // Clear previous error messages
+    document.getElementById('nameError').textContent = '';
+    document.getElementById('passwordError').textContent = '';
+    // Get input values
+    const name = document.getElementById('name').value.trim();
+    const password = document.getElementById('password').value.trim();
+    let isValid = true;
+    // Validate Name
+    const nameRegex = /^[A-Za-z]+$/; // Only alphabets
+    if (name.length < 6 || !nameRegex.test(name)) {
+        alert('name contain atlest 6 character')
+        isValid = false;
+    }
+    // Validate Password
+    if (password.length < 6) {
+        alert('password contain atlest 6 character')
+        isValid = false;
+    }
+    // If valid, you can submit the form or perform further actions
+    if (isValid) {
+        alert('Registration successful!');
+        // Here you can submit the form or handle further logic
+        // this.submit(); // Uncomment if you want to submit the form programmatically
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<html>
+  <head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #137fec;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <div
+      class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+      style="font-family: Manrope, 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-4 bg-white"
+        >
+          <div class="flex items-center gap-4 text-slate-800">
+            <svg
+              class="h-8 w-8 text-[var(--primary-color)]"
+              fill="none"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <h2
+              class="text-slate-800 text-xl font-bold leading-tight tracking-[-0.015em]"
+            >
+              Internship Connect
+            </h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-6">
+            <nav class="flex items-center gap-8">
+              <a
+                class="text-slate-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="text-slate-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal"
+                href="#"
+                >Internships</a
+              >
+              <a
+                class="text-slate-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal"
+                href="#"
+                >Resources</a
+              >
+              <a
+                class="text-slate-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal"
+                href="#"
+                >Support</a
+              >
+            </nav>
+            <div class="flex items-center gap-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-gray-100 text-slate-700 text-sm font-semibold leading-normal tracking-[-0.015em] hover:bg-gray-200"
+              >
+                <span class="truncate">Login</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-transparent text-slate-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-gray-100"
+              >
+                <span class="material-symbols-outlined">language</span>
+              </button>
+              <div class="flex items-center gap-2">
+                <button
+                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-transparent text-slate-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-gray-100"
+                >
+                  <span class="material-symbols-outlined">light_mode</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="px-40 py-10 flex-1">
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1 mx-auto"
+          >
+            <div
+              class="flex flex-wrap justify-between items-center gap-4 p-4 mb-4"
+            >
+              <h1 class="text-slate-800 text-4xl font-bold leading-tight">
+                Top Internships
+              </h1>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+              <div
+                class="flex items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-slate-800 text-lg font-bold leading-tight">
+                      Product Management Internship
+                    </p>
+                    <p
+                      class="text-slate-500 text-sm font-normal leading-normal"
+                    >
+                      Tech Innovators Inc. is seeking a motivated intern to
+                      assist in product development and market analysis.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-semibold leading-normal w-fit hover:bg-blue-600"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZalyT6X4Aiz-2k4nZnfsCu8J_7kH50WtabrSRyJFNQL_mpKUHAR3pXTIgQvNYNyyBKBPkaKJFxjxlZ4Hof8kjhPPxBLTrzekK53JQkRaKqOWuBm4qhXZxgseRXBJXLX8BxDXAdvwbLMDGs-fJn_51r3dkFxazUple5Cv7RUn5Q-mawyulzDQv9mv-1h4LWk_Cu6FDgM_uziyszqkS24BJDmeu1gSga86j1yn0RadrALMek7FYDIp1RRwHhHay__GoPA80jTeoPnI');
+                  "
+                ></div>
+              </div>
+              <div
+                class="flex items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-slate-800 text-lg font-bold leading-tight">
+                      Marketing Strategy Internship
+                    </p>
+                    <p
+                      class="text-slate-500 text-sm font-normal leading-normal"
+                    >
+                      Global Marketing Solutions is looking for an intern to
+                      support marketing campaigns and social media management.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-semibold leading-normal w-fit hover:bg-blue-600"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjM_yLTVRNj601DtwxOHAeEnBga5c3RpBuwhepn61RPgPkXc7E_qpdK4rppW9nw7Qokj5Vgqzs0WRA-dgoTvOpRHBMqsH3q_RaFhnyW_-SBuwlQZG5tIJ0p9MpLanlIX5-ak52epx45BbyI_3zWsd-ZQ7qz9i7kI21UIcGz_X0E38nW2yt6eWtXk5pdWACxAoONs_pBgdcXssAvF23uyxn3hhGlhQpYujkM09N4x8te_MrJnGGaAZozx4GWGC9tIZgJxq06y9Jl_E');
+                  "
+                ></div>
+              </div>
+              <div
+                class="flex items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-slate-800 text-lg font-bold leading-tight">
+                      Data Analysis Internship
+                    </p>
+                    <p
+                      class="text-slate-500 text-sm font-normal leading-normal"
+                    >
+                      Data Insights Corp. offers an internship for analyzing
+                      large datasets and providing insights for business
+                      decisions.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-semibold leading-normal w-fit hover:bg-blue-600"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrrqHDUf333jewD6Dk2euh_Opi9pKJ64l3g8MINH1HiOOigkKlaZMX-TQ2X8gfEyXCoK1aI2m4SN1gJHWVItcK18d57_X_Y5j0MPP-vfYUKUxQlou9Ehz9_SBfUYX41hA29sDptLxlcYwNkgNa5nG-HkWgFtAbLPa22506AinXdRZg1A0nJTeRlkUL5-jwSVnEu0SLFLY3R_bGM-Oewk3qG56MBAYw2TOE51gRAklz5YtwSnFgeoY1AxTzC0SYkjZLbtWE2dtLPAI');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap justify-between items-center gap-4 p-4 mt-12 mb-4"
+            >
+              <h2 class="text-slate-800 text-4xl font-bold leading-tight">
+                Highly Recommended
+              </h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+              <div
+                class="flex items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-slate-800 text-lg font-bold leading-tight">
+                      Software Engineering Internship
+                    </p>
+                    <p
+                      class="text-slate-500 text-sm font-normal leading-normal"
+                    >
+                      CodeCrafters LLC is seeking an intern to assist in
+                      software development and testing.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-semibold leading-normal w-fit hover:bg-blue-600"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCssbHTGaGGc5WbbI20u6UNxDGEF9KHZis3ue3-_ZvqTAjsbe8mc0yTPSbPwJCTTbaSGVW1pDvLxZS408ZJKzH0TaA0ixyXgT8HccmcGAzkkbTq-2E4EdvVByAKb-qsWzPzLS47NmUxT3zk_knsDb-D9eXYSjM4iXadiyhX_LugjlotWDuhTZ_glwH6aiaY_NvxW2ynxtjUjvgiq1SLTkOani0psycAJFPLPEb1Vy8ut17vtdM68yJcMs8Sy-bv0dBgozqeSE7VdCY');
+                  "
+                ></div>
+              </div>
+              <div
+                class="flex items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-slate-800 text-lg font-bold leading-tight">
+                      UX/UI Design Internship
+                    </p>
+                    <p
+                      class="text-slate-500 text-sm font-normal leading-normal"
+                    >
+                      Design Dynamics Inc. is looking for an intern to
+                      contribute to user experience and interface design
+                      projects.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-semibold leading-normal w-fit hover:bg-blue-600"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXt_xeaPsgJwx0cbWAkmoUU0EhwTTvBu-j7ZuEs7es3H3TAIEZ8e6cWm6BLqxxPkDNLkHT9-D1gWmU1OVRI6gceL3QuYQSNMYm4okQm21SZQY21e3ebo3JGKtD1UKCHyLGmHxTmHgdO4kQkzJ76sqoyKBw57mqa35jOBorgnvLaDUBf7uLJ363VuYAQt-v7ncSUqabmki9odeS_L-a1IrSEFh0zPZ8cr5I_PVt7bF8FPnK_AM20qFs7nwHaDgJUorTIoDH1tFsbHY');
+                  "
+                ></div>
+              </div>
+              <div
+                class="flex items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-slate-800 text-lg font-bold leading-tight">
+                      Financial Analysis Internship
+                    </p>
+                    <p
+                      class="text-slate-500 text-sm font-normal leading-normal"
+                    >
+                      Finance Forward Group offers an internship for analyzing
+                      financial data and supporting investment strategies.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-semibold leading-normal w-fit hover:bg-blue-600"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1CsX6OBj8u6NY4P1RPNAWQ1WMwoIya3xMt_ZG-2y0gmb6nQb8WbRI9eMsreR56yNeEeHDJhGe_YhnXFTY276VURC88bYJTgJtQjzgx_B8SUh7MsWMzUHJkLi0R__NFq_hb8iml4e3M65D2F4wQRc-yiyEitpoWX3REos-7WJCWGbaNaYYI8YhvitKSnq15FwGyKjVyCmkBLg83il69iE2Pooz2IlBf57F_CCmYPRfAfK9_EAXkFaOfJqMiB0TVsOf3f4vE5G2t5c');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="bg-white border-t border-gray-200">
+          <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div class="space-y-4">
+                <h3
+                  class="text-sm font-semibold text-slate-600 tracking-wider uppercase"
+                >
+                  Resources
+                </h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Terms of Service</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="space-y-4">
+                <h3
+                  class="text-sm font-semibold text-slate-600 tracking-wider uppercase"
+                >
+                  Internships
+                </h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Browse All</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Top Companies</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >By Category</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Application Tips</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="space-y-4">
+                <h3
+                  class="text-sm font-semibold text-slate-600 tracking-wider uppercase"
+                >
+                  Support
+                </h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-base text-slate-500 hover:text-[var(--primary-color)]"
+                      href="#"
+                      >Report an Issue</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="space-y-4">
+                <h3
+                  class="text-sm font-semibold text-slate-600 tracking-wider uppercase"
+                >
+                  Connect
+                </h3>
+                <div class="flex space-x-4">
+                  <a
+                    class="text-slate-500 hover:text-[var(--primary-color)]"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    class="text-slate-500 hover:text-[var(--primary-color)]"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    class="text-slate-500 hover:text-[var(--primary-color)]"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.714.01 3.68.054.957.044 1.613.196 2.184.42.593.228.985.522 1.408.945.422.423.717.815.945 1.408.223.57.375 1.227.42 2.184.043.966.053 1.25.053 3.68s-.01 2.714-.053 3.68c-.045.957-.197 1.613-.42 2.184-.228.593-.522.985-.945 1.408-.423.422-.815.717-1.408.945-.57.223-1.227.375-2.184.42-.966.043-1.25.053-3.68.053s-2.714-.01-3.68-.053c-.957-.045-1.613-.197-2.184-.42-.593-.228-.985-.522-1.408-.945-.422-.423-.717-.815-.945-1.408-.223-.57-.375-1.227-.42-2.184-.043-.966-.053-1.25-.053-3.68s.01-2.714.053-3.68c.045-.957.197-1.613.42-2.184.228-.593.522.985.945-1.408.423-.422.815-.717-1.408-.945.57-.223 1.227-.375 2.184-.42.966-.043 1.25-.053 3.68-.053zM12 4.887c-2.427 0-2.68.01-3.638.053-.877.042-1.412.188-1.78.322-.44.162-.735.39-.98.635-.244.245-.473.539-.635.98-.135.368-.28.903-.322 1.78C4.898 9.32 4.887 9.573 4.887 12s.01 2.68.053 3.638c.042.877.188 1.412.322 1.78.162.44.39.735.635.98.245.244.539.473.98.635.368.135.903.28 1.78.322.958.043 1.21.053 3.638.053s2.68-.01 3.638-.053c.877-.042 1.412-.188 1.78-.322.44-.162.735-.39.98-.635.244-.245.473-.539.635-.98.135-.368.28-.903.322-1.78.043-.958.053-1.21.053-3.638s-.01-2.68-.053-3.638c-.042-.877-.188-1.412-.322-1.78-.162-.44-.39-.735-.635-.98-.245-.244-.539-.473-.98-.635-.368-.135-.903-.28-1.78-.322C14.68 4.898 14.427 4.887 12 4.887zM12 9.167a2.833 2.833 0 100 5.666 2.833 2.833 0 000-5.666zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.448 1.448 0 100 2.896 1.448 1.448 0 000-2.896z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between"
+            >
+              <p class="text-base text-slate-500 md:order-1 md:mt-0">
+                © 2024 Internship Connect. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <button
+        class="fixed bottom-6 right-6 bg-[var(--primary-color)] text-white rounded-full p-4 shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)]"
+      >
+        <span class="material-symbols-outlined">support_agent</span>
+      </button>
+    </div>
+  </body>
+</html>

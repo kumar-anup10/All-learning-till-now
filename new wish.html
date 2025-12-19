@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff99cc, 0 0 30px #ff99cc;}
+      to { text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 40px #ff66cc;}
+    }
+
+    .typing {
+      font-size: 1.5em;
+      width: 22ch;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #fff;
+      animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+      margin: 20px 0;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .quotes {
+      margin-top: 30px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 4s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .quote {
+      margin: 20px;
+      font-size: 1.2em;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+
+    .quote:nth-child(1) { animation-delay: 2s; }
+    .quote:nth-child(2) { animation-delay: 4s; }
+    .quote:nth-child(3) { animation-delay: 6s; }
+    .quote:nth-child(4) { animation-delay: 8s; }
+    .quote:nth-child(5) { animation-delay: 10s; }
+    .quote:nth-child(6) { animation-delay: 12s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .confetti {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .confetti-piece {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red; /* Correct single color here */
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10px) rotate(0deg); }
+      100% { transform: translateY(110vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎉 Happy Birthday, <b>HIMADRI!</b> 🎉</h1>
+
+<div class="typing">Wishing you magic & dreams✨</div>
+
+<div class="quotes">
+  <div class="quote">🌟 "You are born to shine, never forget that."</div>
+  <div class="quote">🌈 "Life is a journey, enjoy every beautiful moment."</div>
+  <div class="quote">🎂 "Today is the start of your best chapter yet."</div>
+  <div class="quote">💖 "You make the world better just by being you."</div>
+  <div class="quote">🎁 "Here's to another year of love and laughter."</div>
+  <div class="quote">🌸 "Stay wild, moon child. The best is yet to come!"</div>
+  <div class="quote">
+    I wish always be happy and healthy, and may all your dreams come true.
+    <br>May this year bring you closer to your goals and fill your life with joy and laughter.
+  </div>
+</div>
+
+<div class="confetti"></div>
+
+<script>
+  for (let i = 0; i < 100; i++) {
+    const confetti = document.createElement('div');
+    confetti.classList.add('confetti-piece');
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.top = Math.random() * -20 + "vh";
+    confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+    confetti.style.animationDuration = (3 + Math.random() * 5) + "s";
+    document.querySelector('.confetti').appendChild(confetti);
+  }
+</script>
+</body>
+</html>

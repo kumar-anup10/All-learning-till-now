@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            if (!validateName(name)) {
+                alert("password...");
+                return false;
+            }
+            return true;
+        }
+        function validateName(name) {
+            const nameRegex = /^[A-Za-z]{6,}$/;
+            return nameRegex.test(name);
+        }
+    </script>
+
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <form name="Registration Frorm" onsubmit="return validateForm()" method="post">
+        <label>Enter Your Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name"required>
+        <br>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+
+</html>

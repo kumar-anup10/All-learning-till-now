@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Waste Management</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f9f4;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #2e7d32;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      z-index: 999;
+    }
+
+    nav .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a5d6a7;
+    }
+
+    /* Hamburger */
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(46, 125, 50, 0.6), rgba(46, 125, 50, 0.6)), 
+      url('https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: #66bb6a;
+      border: none;
+      padding: 15px 35px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #4caf50;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 36px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 18px;
+      color: #555;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Services Section */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #a5d6a7;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2e7d32;
+        width: 200px;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 20px 0;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">E-Waste</div>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#login">Login</a></li>
+    <li><a href="#help-bot">Get Help Bot</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h1>Recycle Your E-Waste, Save the Planet</h1>
+  <p>Eco-Friendly | Safe | Hassle-Free Recycling Services</p>
+  <button>Schedule a Pickup</button>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>We are dedicated to sustainable electronics recycling, reducing pollution, and promoting a greener future. Our process ensures your devices are disposed of safely and responsibly.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <i class="fas fa-recycle"></i>
+      <h3>Collection</h3>
+      <p>We collect your e-waste directly from your home or business, ensuring safe handling at every step.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Secure Data Destruction</h3>
+      <p>We guarantee secure data destruction services for all devices, keeping your personal information safe.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-leaf"></i>
+      <h3>Eco Recycling</h3>
+      <p>Devices are dismantled and recycled with minimal environmental impact, following the best eco practices.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Need help or have questions? Contact us anytime through our hotline or email. We're ready to assist you 24/7!</p>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+  <h2>Login</h2>
+  <p>Access your account, schedule pickups, and track your recycling history easily through our secure portal.</p>
+</section>
+
+<!-- Help Bot Section -->
+<section id="help-bot">
+  <h2>Get Help Bot</h2>
+  <p>Need instant help? Our AI-powered bot is available 24/7 to solve your queries and guide you through our services.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 E-Waste Management. All rights reserved.</p>
+  <div>
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#">Privacy Policy</a>
+  </div>
+</footer>
+
+<!-- JavaScript for Hamburger Menu -->
+<script>
+  function toggleMenu() {
+    document.getElementById('menu').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
